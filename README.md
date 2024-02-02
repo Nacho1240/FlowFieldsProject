@@ -31,18 +31,10 @@ Adjust the following parameters in the `Effect` class to customize the visual ou
 - `zoom`: Zoom factor affecting the flow field.
 - `curve`: Curve factor influencing the flow field.
 
-- Modify the movement equations to change the particle's path (line ):
+- Adjust the trigonometric functions in the `Effect` class to influence the flow field (line 94):
 
     ```javascript
-    // Customize the movement equation
-    this.x += this.xSpeed + Math.sin(this.angle) * 2;
-    this.y += this.ySpeed + Math.cos(this.angle) * 2;
-    ```
-
-- Adjust the trigonometric functions in the `Effect` class to influence the flow field (line ):
-
-    ```javascript
-    // Customize the trigonometric functions
+    // Customize the trigonometric functions or experiment with another func
     this.xSpeed = Math.cos(angle);
     this.ySpeed = Math.sin(angle);
     ```
