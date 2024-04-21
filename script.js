@@ -85,7 +85,7 @@ class Particle{
             let y = Math.floor(this.y / this.effect.cellSize);
 
             //this calculates the position of the particle on the flow field matrix)
-            let index = x + y * this.effect.cols;
+            let index = x + y * this.effect.cols ;
 
             //this set the angle of the particle to the angle of the flow field  on that specific cell
             let angle = this.effect.flowField[index];
